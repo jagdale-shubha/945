@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jenkins Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Jenkins CI/CD Dashboard</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="#">Build History</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Manage Jenkins</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="status">
+      <h2>Recent Builds</h2>
+      <table>
+        <tr>
+          <th>Project</th>
+          <th>Status</th>
+          <th>Duration</th>
+          <th>Timestamp</th>
+        </tr>
+        <tr>
+          <td>MyApp</td>
+          <td class="success">Success</td>
+          <td>2m 15s</td>
+          <td>2025-06-13 10:15</td>
+        </tr>
+        <tr>
+          <td>API-Service</td>
+          <td class="fail">Failed</td>
+          <td>1m 43s</td>
+          <td>2025-06-13 09:50</td>
+        </tr>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Jenkins UI Mock. All rights reserved.</p>
+  </footer>
+</body>
+</html>
