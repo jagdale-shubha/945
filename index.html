@@ -4,25 +4,43 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Welcome to DevOps</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      background-color: black;
-      color: white;
+      background-color: #000;
+      color: #fff;
+      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Orbitron', sans-serif;
+      overflow: hidden;
     }
 
-    h1 {
+    .welcome-message {
       font-size: 4rem;
-      text-shadow: 2px 2px 8px #ffffff;
+      text-align: center;
+      text-shadow: 0 0 15px #00ffcc, 0 0 30px #00ffcc;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+      }
+      to {
+        text-shadow: 0 0 20px #00ffee, 0 0 40px #00ffee;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to DevOps</h1>
+  <div class="welcome-message">Welcome to DevOps</div>
 </body>
 </html>
